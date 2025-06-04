@@ -769,7 +769,12 @@
     font-weight: bold;
     color: #0066ff;
 }
-
+.offline-note {
+    color: #666;
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
 .discount-badge {
     background-color: #ff3b3b;
     color: #fff;
