@@ -533,12 +533,9 @@
     flex-wrap: wrap;
     gap: 50px;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.contact-info {
-    flex: 1 1 400px;
-}
 
 .contact-info h2 {
     font-size: 36px;
@@ -647,6 +644,60 @@
     background: #004bcc;
 }
 
+
+.email-download-section {
+    padding: 60px 20px;
+    background: #eef2f8;
+    text-align: center;
+}
+
+.email-download-section h2 {
+    font-size: 28px;
+    color: #0066ff;
+    margin-bottom: 10px;
+}
+
+.email-download-section p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.email-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.email-form input {
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    min-width: 250px;
+}
+
+.email-form button {
+    padding: 12px 20px;
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.email-form button:hover {
+    background-color: #0047cc;
+}
+
+.form-message {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
 /* Анимация появления */
 .reveal {
     opacity: 0;
@@ -706,7 +757,35 @@
 .thank-box a:hover {
     background: #004bcc;
 }
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 16px;
+    margin-right: 10px;
+}
 
+.new-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0066ff;
+}
+
+.discount-badge {
+    background-color: #ff3b3b;
+    color: #fff;
+    font-size: 14px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-bottom: 10px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+}
 
 .pricing {
     background: linear-gradient(135deg, #f7faff, #ffffff);

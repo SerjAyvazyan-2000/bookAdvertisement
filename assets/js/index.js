@@ -43,6 +43,33 @@ if(reveals){
 }
 
 
+const form = document.getElementById('emailDownloadForm');
+if(form){
+    const emailInput = document.getElementById('userEmail');
+    const message = document.getElementById('formMessage');
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const email = emailInput.value.trim();
+
+        if (email) {
+            message.textContent = "";
+
+            const link = document.createElement('a');
+            link.href = 'assets/images/book.pdf';
+            link.download = 'Психология_Риска.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        } else {
+            message.textContent = "Пожалуйста, введите email";
+            message.style.color = "red";
+        }
+    });
+}
+
+
 
 
 
@@ -62,20 +89,6 @@ if(faqItems){
 
 
 
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const form = e.target;
-    const name = form.name.value.trim();
-    const email = form.email.value.trim();
-    const message = form.message.value.trim();
-
-    if (name && email && message) {
-        window.location.href = "thanks.html";
-    } else {
-        alert("Пожалуйста, заполните все поля формы.");
-    }
-});
 
 
 document.addEventListener("DOMContentLoaded", function () {

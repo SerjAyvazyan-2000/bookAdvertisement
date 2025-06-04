@@ -67,7 +67,7 @@
                                 <li>✔ Риски в жизни, бизнесе и отношениях</li>
                                 <li>✔ Почему даже логичные люди поступают безумно</li>
                             </ul>
-                            <a href="assets/images/book.pdf" class="hero-btn" download>📥 Скачать книгу</a>
+                            <a href="#contact" class="hero-btn" >📥 Скачать книгу</a>
                         </div>
                     </div>
                 </div>
@@ -82,7 +82,7 @@
                                 <li>✔ Влияние эмоций и адреналина</li>
                                 <li>✔ Для всех, кто хочет понять себя глубже</li>
                             </ul>
-                            <a href="assets/images/book.pdf"  class="hero-btn" download>📥 Скачать книгу</a>
+                            <a href="#contact"  class="hero-btn" >📥 Скачать книгу</a>
                         </div>
                     </div>
                 </div>
@@ -372,7 +372,6 @@
             <div class="contact-wrapper reveal">
                 <div class="contact-info">
                     <h2>Свяжитесь с нами</h2>
-                    <p>Если у вас остались вопросы по книге, регистрации или вы хотите пригласить автора — напишите нам.</p>
 
                     <ul class="contact-details">
                         <li>
@@ -399,23 +398,19 @@
                     </div>
                 </div>
 
-                <form action="send.php" method="POST" class="contact-form" id="contactForm">
-                    <h3>Написать сообщение</h3>
-                    <label>
-                        Имя:
-                        <input type="text" name="name" placeholder="Ваше имя" required>
-                    </label>
-                    <label>
-                        Email:
-                        <input type="email" name="email" placeholder="example@mail.ru" required>
-                    </label>
-                    <label>
-                        Сообщение:
-                        <textarea name="message" placeholder="Ваш вопрос..." required></textarea>
-                    </label>
-                    <button type="submit">Отправить сообщение</button>
-                    <div id="formStatus" class="form-status"></div>
-                </form>
+
+                <div class="email-download-section">
+                        <h2>Скачайте бесплатный фрагмент книги</h2>
+                        <p>Оставьте свой email, и начнётся загрузка PDF-файла</p>
+
+                        <form id="emailDownloadForm" class="email-form">
+                            <label>
+                                <input type="email" id="userEmail" placeholder="Ваш email" required />
+                            </label>
+                            <button type="submit">📥 Скачать книгу</button>
+                            <p class="form-message" id="formMessage"></p>
+                        </form>
+                </div>
             </div>
         </div>
     </section>
@@ -458,7 +453,7 @@
                         <div class="faq-icon">+</div>
                     </div>
                     <div class="faq-answer">
-                        <p>Да, после быстрой предрегистрации вы получите ссылку на PDF-файл с пробной версией книги и доступ к бонусным материалам.</p>
+                        <p>Нет вы можте скачать оставив ваш email . </p>
                     </div>
                 </div>
 
@@ -489,49 +484,26 @@
     <section class="pricing section" id="pricing">
         <div class="container">
             <div class="pricing-header reveal">
-                <h2>Выберите подходящий пакет</h2>
-                <p>Получите максимум пользы от книги. Мы подготовили для вас несколько вариантов доступа.</p>
+                <h2>Выберите  пакет</h2>
+                <p>Получите максимум пользы от книги.</p>
             </div>
 
             <div class="pricing-cards">
 
-                <!-- Бесплатный -->
-                <div class="pricing-card reveal">
-                    <h3>Бесплатный</h3>
-                    <p class="price">0 ₽</p>
-                    <ul>
-                        <li>📘 Пробный фрагмент книги (PDF)</li>
-                        <li>📄 Введение + первая глава</li>
-                        <li>⏱ Мгновенная загрузка</li>
-                        <li>🚫 Без бонусов и поддержки</li>
-                    </ul>
-                    <a href="assets/images/book.pdf" download class="btn">Скачать бесплатно</a>
-                </div>
-
-                <!-- Стандарт -->
                 <div class="pricing-card featured reveal">
+                    <div class="discount-badge">🔥 -100%</div>
                     <h3>Стандарт</h3>
-                    <p class="price">990 ₽</p>
+                    <p class="price">
+                        <span class="old-price">990 ₽</span>
+                        <span class="new-price">0 ₽</span>
+                    </p>
                     <ul>
                         <li>📘 Полная книга в PDF</li>
                         <li>🔍 Дополнительные главы</li>
                         <li>📩 Подписка на email-рассылку</li>
                         <li>🎁 Чек-лист "Как управлять риском"</li>
                     </ul>
-                    <a href="#contact" class="btn btn-blue">Оформить</a>
-                </div>
-
-                <!-- Премиум -->
-                <div class="pricing-card reveal">
-                    <h3>Премиум</h3>
-                    <p class="price">1990 ₽</p>
-                    <ul>
-                        <li>📘 Полная книга (PDF + EPUB)</li>
-                        <li>🎓 Онлайн-вебинар с автором</li>
-                        <li>📬 Приоритетная поддержка</li>
-                        <li>💎 Доступ к закрытому чату</li>
-                    </ul>
-                    <a href="#contact" class="btn">Оформить доступ</a>
+                    <a href="#contact" class="btn btn-blue">Скачать бесплатно</a>
                 </div>
 
             </div>
