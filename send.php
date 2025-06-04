@@ -5,7 +5,7 @@ $email = trim($_POST["email"]);
 $message = trim($_POST["message"]);
 
 // Кому отправлять
-$to = "ayvazyanserj3@gmail.com";
+$to = "muradyan-03@list.ru";
 
 // Тема письма
 $subject = "Заявка с сайта Психология Риска";

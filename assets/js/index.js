@@ -62,20 +62,20 @@ if(faqItems){
 
 
 
-// document.getElementById("contactForm").addEventListener("submit", function (e) {
-//     e.preventDefault();
-//
-//     const form = e.target;
-//     const name = form.name.value.trim();
-//     const email = form.email.value.trim();
-//     const message = form.message.value.trim();
-//
-//     if (name && email && message) {
-//         window.location.href = "thanks.html";
-//     } else {
-//         alert("Пожалуйста, заполните все поля формы.");
-//     }
-// });
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const message = form.message.value.trim();
+
+    if (name && email && message) {
+        window.location.href = "thanks.html";
+    } else {
+        alert("Пожалуйста, заполните все поля формы.");
+    }
+});
 
 
 document.addEventListener("DOMContentLoaded", function () {
